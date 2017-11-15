@@ -5,19 +5,19 @@ Go implementation of the [sindresorhus/cli-spinners](https://github.com/sindreso
 ## Usage
 
 ```go
-# create new dots spinner
+// create new dots spinner
 spinner := spinners.NewDotsSpinner(os.Stdout)
 
-# start spinner in a separate go routing
+// start spinner in a separate go routing
 spinner.Start("waiting for something long ...")
 
-# do something
+// do something
 ...
 
-# stop spinner and reset the line
+// stop spinner and reset the line
 spinner.Stop()
 
-# or get a spinner by its name
+// or get a spinner by its name
 spinner, err := spinners.NewSpinnerByName("dots", os.Stdout)
 if err != nil {
     log.Fatal(err)
@@ -27,7 +27,7 @@ if err != nil {
 ## Test a Spinner
 
 ```bash
-go run example/app.go nameofspinner
+go run example/app.go nameOfSpinner
 ```
 
 ## Build
