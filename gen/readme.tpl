@@ -24,6 +24,12 @@ if err != nil {
 }
 ```
 
+## Test a Spinner
+
+```bash
+go run example/app.go nameofspinner
+```
+
 ## Build
 
 The spinners.go can be regenerated using the `go generate` command. The command will load the latest spinners.json from
